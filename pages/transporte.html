@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transportes NT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../img/favicon.png">
@@ -13,17 +15,36 @@
 
 <body>
     <header class="header">
-        <div class="header-title">
+        <div class="header-titulo">
             <h1>Transportes</h1>
         </div>
-        <nav class="header-nav">
-            <ul class="header-list">
-                <li class="list-item"> <a href="../index.html"> Inicio</a></li>
-                <li class="list-item"><a href="./servicios.html">Servicios</a></li>
-                <li class="list-item"><a href="./transporte.html">Transporte</a></li>
-                <li class="list-item"><a href="./almacenamientos.html">Almacenamiento</a></li>
-                <li class="list-item"><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg .barra ">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./transporte.html">Transporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./almacenamientos.html">Almacenamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="parallax"></div>
 
@@ -33,36 +54,38 @@
         <section>
             <h2>Servicio de transporte</h2>
             <div>
-                <figure class="figure-transportes"><img src="../img/transportes-camiones.jpg" alt="camiones"
+                <figure class="figure-transportes">
+                    <img src="../img/transportes-camiones.jpg" alt="camiones"
                         class="img-transportes"></figure>
             </div>
             <div class="transportes-cargas">
                 <h3>Cargas completas & parciales</h3>
                 <ul>
-                    <li>Sistema TMS de última generación - Transportation Management System.</li>
-                    <li>Entregas Directas a Clientes, Interplanta, Round Trip, a nivel nacional.</li>
-                    <li>Distribución a nivel nacional. Entregas directas y a varios destinos.</li>
-                    <li>Cargas Parciales.</li>
-                    <li>Servicios de Impo & Expo. Servicio Contenedores.</li>
-                    <li>Carga Peligrosa</li>
-                    <li>Refrigerados y a temperatura ambiente.</li>
+                    <li class="item--disc">Sistema TMS de última generación - Transportation Management System.</li>
+                    <li class="item--disc">Entregas Directas a Clientes, Interplanta, Round Trip, a nivel nacional.</li>
+                    <li class="item--disc">Distribución a nivel nacional. Entregas directas y a varios destinos.</li>
+                    <li class="item--disc">Cargas Parciales.</li>
+                    <li class="item--disc">Servicios de Impo & Expo. Servicio Contenedores.</li>
+                    <li class="item--disc">Carga Peligrosa</li>
+                    <li class="item--disc">Refrigerados y a temperatura ambiente.</li>
                 </ul>
             </div>
-            <h4>Nuestra flota</h4>
+            <h3>Nuestra flota</h3>
+            <figure>
+                <img src="../img/transportes-flota.jpg" alt="camiones" class="img-flota">
+            </figure>
             <p>Contamos con unidades de última generación en función de las necesidades de nuestros Clientes.</p>
             <ul>
-                <li>Unidades: utilitarios, camionetas, chasis, balancines, furgones y semiremolque siders.</li>
-                <li>Equipamiento para carga y descarga mecanizada.</li>
-                <li>Unidades equipadas con Sistema de Seguimiento Satelital.</li>
-                <li>Vinculación on line con telefonía móvil.</li>
-                <li>Tracking.</li>
-                <li>GPS para el control de flota, seguimiento de recorridos, eventos y alertas. Nos permite posicionar,
+                <li class="item--disc">Unidades: utilitarios, camionetas, chasis, balancines, furgones y semiremolque siders.</li>
+                <li class="item--disc">Equipamiento para carga y descarga mecanizada.</li>
+                <li class="item--disc">Unidades equipadas con Sistema de Seguimiento Satelital.</li>
+                <li class="item--disc">Vinculación on line con telefonía móvil.</li>
+                <li class="item--disc">Tracking.</li>
+                <li class="item--disc">GPS para el control de flota, seguimiento de recorridos, eventos y alertas. Nos permite posicionar,
                     monitorear y gestionar la flota en tiempo real.</li>
             </ul>
             <div>
-                <figure>
-                    <img src="../img/transportes-flota.jpg" alt="camiones" class="img-flota">
-                </figure>
+                
             </div>
         </section>
     </main>
@@ -93,6 +116,10 @@
 
 
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

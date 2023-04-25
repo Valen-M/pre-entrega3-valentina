@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NordensTrans</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./img/favicon.png">
@@ -14,35 +15,48 @@
 
 <body>
     <header class="header">
-        <div class="header-title">
+        <div class="header-titulo">
             <h1>NordensTrans</h1>
         </div>
-        <nav class="header-nav">
-            <ul class="header-list">
 
-                <li class="list-item"> <a href="./index.html"> Inicio</a></li>
-
-                <li class="list-item"><a href="./pages/servicios.html">Servicios</a></li>
-
-                <li class="list-item"><a href="./pages/transporte.html">Transporte</a></li>
-
-
-                <li class="list-item"><a href="./pages/almacenamientos.html">Almacenamiento</a></li>
-
-
-                <li class="list-item"><a href="./pages/contacto.html">Contacto</a></li>
-
-
-            </ul>
+        <nav class="navbar navbar-expand-lg .barra ">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="./index.html"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/transporte.html">Transporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/almacenamientos.html">Almacenamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
         <div class="parallax"></div>
 
     </header>
     <main>
-        <section class="container-historia">
-            <h2 class="historia-title">Excedemos las expectativas agregando valor a sus productos</h2>
+        <h2 class="historia-titulo">Excedemos las expectativas agregando valor a sus productos</h2>
+        <section class="contenedor-historia">
 
-            <figure>
+
+            <figure class="figure--order">
                 <img src="./img/descarga-camioneta.jpg" alt="descarga camioneta" class="img-historia">
             </figure>
             <p>Somos un Grupo Empresario con más de 20 años de experiencia que trabajamos junto a prestigiosas compañías
@@ -51,8 +65,8 @@
                 Nuestros Clientes.</p>
 
         </section>
-        <section class="container-diferencias">
-            <h3>Lo que nos hace diferentes</h3>
+        <section class="contenedor-diferencias">
+            <h3>LO QUE NOS HACE DIFERENTES</h3>
             <p>Estos son los pilares fundamentales sobre los cuales basamos nuestras actividades diarias</p>
 
 
@@ -125,30 +139,34 @@
     <footer>
 
         <div class="contenedor-footer">
-<div class="footer-contacto">
-            <a href="./pages/contacto.html">
-                <h5>Solicitanos asesoramiento personalizado</h5>
-            </a>
-        </div>
-<div class="footer-redes">
-            <h5>Seguinos en nuestras redes sociales!</h5>
-            <ul class="list-footer">
-                <li>
-                    <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i>LinkedIn</a>
-                </li>
-                <li> <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i>Instagram</a></li>
+            <div class="footer-contacto">
+                <a href="./pages/contacto.html">
+                    <h5>Solicitanos asesoramiento personalizado</h5>
+                </a>
+            </div>
+            <div class="footer-redes">
+                <h5>Seguinos en nuestras redes sociales!</h5>
+                <ul class="list-footer">
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i>LinkedIn</a>
+                    </li>
+                    <li> <a href="https://www.instagram.com" target="_blank"><i
+                                class="bi bi-instagram"></i>Instagram</a></li>
 
-                <li> <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i>Facebook</a></li>
-                <li><a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i>Twitter</a></li>
-            </ul>
-        </div>
+                    <li> <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i>Facebook</a>
+                    </li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i>Twitter</a></li>
+                </ul>
+            </div>
         </div>
         <span class="copy-footer"><i class="bi bi-r-circle"></i>NordensTrans Transportes</span>
 
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

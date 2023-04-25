@@ -7,7 +7,8 @@
   font-family: 'Roboto Condensed', sans-serif !important;
 }
 
-body {
+body,
+.barra {
   background-color: rgba(198, 197, 197, 0.603);
   font-size: 1.5rem;
 }
@@ -21,6 +22,11 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
 h2,
 h3,
 h4 {
@@ -28,16 +34,11 @@ h4 {
   font-weight: 700;
   font-size: 1.5rem;
 }
-
-
-/* CSS-INDEX */
-/* ====-CSS-HEADER-====*/
-
 header {
   width: 100%;
 }
 
-.header-title {
+.header-titulo {
   display: flex;
   justify-content: center;
   color: rgba(13, 0, 254, 0.484);
@@ -58,8 +59,10 @@ header {
   width: 100%;
 }
 
+/* CSS-INDEX */
+
 /* SECTION-HISTORIA */
-.container-historia {
+.contenedor-historia {
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -68,13 +71,14 @@ header {
   align-content: center;
 }
 
-.historia-title {
-  text-align: justify;
+.historia-titulo {
+  text-align: center;
 }
 
 .img-historia {
-  width: 100%;
+  width: 500px;
   height: auto;
+  border-radius: 15px;
 
 }
 
@@ -82,7 +86,7 @@ section h3 {
   text-align: center;
 }
 
-.container-diferencias {
+.contenedor-diferencias {
   padding: 15px;
 }
 
@@ -191,7 +195,7 @@ footer a {
 
   /* header-desktop */
   body {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .header {
@@ -207,20 +211,33 @@ footer a {
     justify-content: center;
     gap: 40px;
   }
+  
+
+  /* section-historia */
+  .contenedor-historia {
+    flex-direction: row;
+    gap: 10px;
+  }
+.contenedor-historia p{
+  text-align: center;
+}
+  .figure--order {
+    order: 1;
+  }
 
   /* card-desktop-INDEX */
   .contenedor-tarjetas {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    gap: 40px;
+    gap: 11px;
   }
 
   .tarjeta-text {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   section h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
 
@@ -266,16 +283,16 @@ footer a {
   align-items: center;
 }
 
-.item-merc {
+.item--disc {
   list-style: disc;
 }
 
 /* MEDIAQUERIE-SERVICIOS-TABLET */
- @media(min-width:768px) {
+@media(min-width:768px) {
   .contenedor-mercaderias {
     display: grid;
     grid-template-columns: 2fr 3fr;
-   
+
     gap: 20px;
     grid-template-rows: 10vh 2fr;
 
@@ -334,7 +351,7 @@ footer a {
 /* css para pagina transportes*/
 .img-transportes,
 .img-flota {
-  width: 350px;
+  width: 400px;
   height: auto;
 
 }
