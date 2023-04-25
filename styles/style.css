@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+body {
+  background-color: rgba(198, 197, 197, 0.603);
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  color: rgba(13, 0, 254, 0.484);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
+/* CSS-INDEX */
+/* ====-CSS-HEADER-====*/
+
+header {
+  width: 100%;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  color: rgba(13, 0, 254, 0.484);
+}
+
+
+.list-item {
+  text-align: center;
+}
+
+.parallax {
+  background-image: url("../img/img.portada.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+/* SECTION-HISTORIA */
+.container-historia {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.historia-title {
+  text-align: justify;
+}
+
+.img-historia {
+  width: 100%;
+  height: auto;
+
+}
+
+section h3 {
+  text-align: center;
+}
+
+.container-diferencias {
+  padding: 15px;
+}
+
+/* CARDS-DIFERENCIAS */
+.tarjeta {
+  font-size: 1.5rem;
+  padding: 0.5em;
+  display: flex;
+  gap: 20px;
+
+}
+
+.tarjeta-icon {
+  background-color: rgba(13, 0, 254, 0.484);
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tarjeta-icon i {
+  font-size: 1.8rem;
+  color: white;
+
+}
+
+/* FOOTER */
+footer {
+  padding: 15px;
+  background-color: rgba(13, 0, 254, 0.484);
+  color: white;
+}
+
+h5 {
+  color: white;
+  font-size: 1.3rem;
+}
+
+footer a {
+  color: white;
+}
+
+.footer-redes {
+  line-height: 20px;
+}
+
+.footer-redes,
+.footer-contacto {
+  font-size: 1rem;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy-footer {
+  display: block;
+  text-align: center;
+  border-top: 2px solid white;
+}
+
+
+/* MEDIAQUERIE-TABLET */
+@media (min-width:768px)and (max-width:1200px) {
+
+  /* header-tablet */
+  .header {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .header-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  /* cards-tablet-INDEX */
+  section h3 {
+    font-size: 2rem;
+  }
+
+  .contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+
+  }
+
+  /* footer-tablet */
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+/* MEDIAQUERIE-DESKTOP */
+@media (min-width:1201px) {
+
+  /* header-desktop */
+  body {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .header-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  /* card-desktop-INDEX */
+  .contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 40px;
+  }
+
+  .tarjeta-text {
+    font-size: 1rem;
+  }
+
+  section h3 {
+    font-size: 1.5rem;
+  }
+
+
+  /* footer-desktop */
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+}
+
+/* CSS-SERVICIOS*/
+.contenedor-logistica {
+  padding: 15px;
+
+}
+
+.logistica {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-mercaderia {
+  width: 100%;
+  height: auto;
+}
+
+.contenedor-servicios {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mercaderia-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-merc {
+  list-style: disc;
+}
+
+/* MEDIAQUERIE-SERVICIOS-TABLET */
+ @media(min-width:768px) {
+  .contenedor-mercaderias {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+   
+    gap: 20px;
+    grid-template-rows: 10vh 2fr;
+
+  }
+
+  .mercaderia-img {
+    grid-row: 1/3;
+  }
+
+  .mercaderia-title {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .mercaderia-parrafo {
+    grid-row: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+/* .img-serv-pallets {
+  width: 300px;
+  height: auto;
+}
+
+.figure-servicios,
+.figure-transportes {
+  display: inline-block;
+  width: 50%;
+}
+
+.serv-mercaderias,
+.transportes-cargas {
+  display: inline-block;
+  width: 50%;
+
+}
+
+.container-servicios,
+.transportes-cargas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+/* css para pagina transportes*/
+.img-transportes,
+.img-flota {
+  width: 350px;
+  height: auto;
+
+}
