@@ -1,0 +1,43 @@
+.footer {
+    padding: 15px;
+    background-color: rgba(13, 0, 254, 0.484);
+    color: white;
+
+    & ul {
+        list-style: none;
+}
+& a {
+    color: white;
+    text-decoration: none;
+}
+    &-redes {
+        line-height: 20px;
+    }
+
+    &-redes &-contacto {
+        font-size: 1rem;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: block;
+        text-align: center;
+        border-top: 2px solid white;
+    }
+
+    & h5 {
+        color: white;
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+
+
+.copy-footer {
+    display: block;
+    text-align: center;
+    border-top: 2px solid white;
+}
