@@ -2,13 +2,16 @@
 
 .contenedor-almacenamientos{
     padding: 5px;
+   img{
+    max-width: 290px;
+   }
 }
 /*MEDIAQUERIE-TABLET*/
 @media (min-width:768px){
     .tipos-almacenamientos{
         display: flex;
         margin-top: 20px;
-        img{
+        img{ max-width: 550px;
             border-radius: 30px;
         }
     }

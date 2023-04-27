@@ -332,6 +332,9 @@ section h3 {
 .contenedor-almacenamientos {
   padding: 5px;
 }
+.contenedor-almacenamientos img {
+  max-width: 290px;
+}
 
 /*MEDIAQUERIE-TABLET*/
 @media (min-width: 768px) {
@@ -340,6 +343,7 @@ section h3 {
     margin-top: 20px;
   }
   .tipos-almacenamientos img {
+    max-width: 550px;
     border-radius: 30px;
   }
 }
