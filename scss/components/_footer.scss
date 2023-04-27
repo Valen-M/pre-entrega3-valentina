@@ -1,6 +1,12 @@
+/*Footer*/
+$color-fondo:rgba(13, 0, 254, 0.484);
+$color-letras: white;
+$fs-titulo:2rem;
+$fs-normal:1.5rem;
 .footer {
     padding: 15px;
-    background-color:$color-fondo;
+
+    background-color: $color-fondo;
     color:$color-letras;
 
     & ul {
@@ -13,6 +19,7 @@
     &-redes {
         line-height: 20px;
     }
+
 
     &-redes &-contacto {
         font-size: $fs-normal;

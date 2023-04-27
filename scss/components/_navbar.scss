@@ -1,8 +1,13 @@
+/*Header*/
+$color-fondo:rgba(13, 0, 254, 0.484);
+$color-letras: white;
+$fs-titulo:2rem;
+$fs-normal:1.5rem;
 header {
     width: 100%;
     background-color: rgba(198, 197, 197, 0.603);
     
-    font-size: 1.5rem;
+    font-size: $fs-normal;
 
     & ul {
         list-style: none;
@@ -17,7 +22,7 @@ header {
     & .header-titulo {
         display: flex;
         justify-content: center;
-        color: rgba(13, 0, 254, 0.484);
+        color: $color-fondo;
     }
 
     & .parallax {

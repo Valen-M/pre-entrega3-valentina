@@ -1,4 +1,8 @@
 /*Index*/
+$color-fondo:rgba(13, 0, 254, 0.484);
+$color-letras: white;
+$fs-titulo:2rem;
+$fs-normal:1.5rem;
 .contenedor-historia {
     padding: 15px;
     display: flex;
@@ -29,13 +33,13 @@ section h3 {
 
 
     & .tarjeta {
-        font-size: 1.5rem;
+        font-size: $fs-normal;
         padding: 0.5em;
         display: flex;
         gap: 20px;
 
         &-icon {
-            background-color: rgba(13, 0, 254, 0.484);
+            background-color:$color-fondo;
             min-width: 60px;
             height: 60px;
             border-radius: 50px;
@@ -45,7 +49,7 @@ section h3 {
 
             & i {
                 font-size: 1.8rem;
-                color: white;
+                color:$color-letras;
 
             }
 
