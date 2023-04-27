@@ -1,6 +1,7 @@
 header {
     width: 100%;
     background-color: rgba(198, 197, 197, 0.603);
+    
     font-size: 1.5rem;
 
     & ul {
@@ -31,15 +32,34 @@ header {
 }
 
 /* MEDIAQUERIE-TABLET */
- @media (min-width:768px)and (max-width:1200px) {
+@media (min-width:768px)and (max-width:1200px) {
 
     .header {
-         display: flex;
-         flex-direction: column;
- &-list {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 40px;
- }
-     }  }
+        display: flex;
+        flex-direction: column;
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+}
+/*MEDIAQUERIE DESKTOP*/
+
+@media (min-width:768px)and (max-width:1200px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+}
+

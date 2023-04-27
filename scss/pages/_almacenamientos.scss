@@ -1,0 +1,15 @@
+/*Almacenamientos*/
+
+.contenedor-almacenamientos{
+    padding: 5px;
+}
+/*MEDIAQUERIE-TABLET*/
+@media (min-width:768px){
+    .tipos-almacenamientos{
+        display: flex;
+        margin-top: 20px;
+        img{
+            border-radius: 30px;
+        }
+    }
+}

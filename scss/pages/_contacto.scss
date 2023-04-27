@@ -1,0 +1,37 @@
+/*Contacto*/
+form {
+    width: 100vw;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .item-form{
+        display: flex;
+    gap: 20px;
+    }
+    .item-form-email{
+        gap: 43px;
+    }
+    .btn
+{
+    color:$color-fondo;
+   border:2px solid $color-fondo;
+   &:hover{
+    background-color: $color-fondo;
+    color: $color-letras;
+    border: 2px solid $color-fondo;
+   }
+   &:active
+   {
+    background-color: $color-fondo;
+    color: $color-letras;
+    border: 2px solid $color-fondo;
+   }
+   
+    }
+   
+}
+
+

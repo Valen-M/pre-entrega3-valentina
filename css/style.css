@@ -1,103 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif !important;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 3 |     background-color:$color-fondo;
+ *   |                      ^^^^^^^^^^^^
+ *   '
+ *   scss\components\_footer.scss 3:22  @import
+ *   scss\main.scss 5:9                 root stylesheet */
 
-body {
-  background-color: rgba(198, 197, 197, 0.603);
-  font-size: 1.5rem;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-
-h2,
-h3,
-h4 {
-  color: rgba(13, 0, 254, 0.484);
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-header {
-  width: 100%;
-  background-color: rgba(198, 197, 197, 0.603);
-  font-size: 1.5rem;
-}
-header ul {
-  list-style: none;
-}
-header ul a {
-  color: black;
-  text-decoration: none;
-}
-header .header-titulo {
-  display: flex;
-  justify-content: center;
-  color: rgba(13, 0, 254, 0.484);
-}
-header .parallax {
-  background-image: url("../img/img.portada.jpg");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-
-/* MEDIAQUERIE-TABLET */
-@media (min-width: 768px) and (max-width: 1200px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-  }
-  .header-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
-}
-.footer {
-  padding: 15px;
-  background-color: rgba(13, 0, 254, 0.484);
-  color: white;
-}
-.footer ul {
-  list-style: none;
-}
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-.footer-redes {
-  line-height: 20px;
-}
-.footer-redes .footer-contacto {
-  font-size: 1rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: block;
-  text-align: center;
-  border-top: 2px solid white;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color:$color-fondo;\d\a   \2502                       ^^^^^^^^^^^^\a   \2575 \a   scss\\components\\_footer.scss 3:22  @import\a   scss\\main.scss 5:9                 root stylesheet";
 }
-.footer h5 {
-  color: white;
-  font-size: 1.3rem;
-}
-
-.copy-footer {
-  display: block;
-  text-align: center;
-  border-top: 2px solid white;
-}
-
-/*# sourceMappingURL=style.css.map */

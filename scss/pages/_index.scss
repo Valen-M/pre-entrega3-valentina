@@ -1,0 +1,115 @@
+/*Index*/
+.contenedor-historia {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    & .historia-titulo {
+        text-align: center;
+    }
+
+    & .img-historia {
+        max-width: 350px;
+        height: auto;
+        border-radius: 15px;
+
+    }
+}
+
+section h3 {
+
+    text-align: center;
+}
+
+.contenedor-diferencias {
+    padding: 15px;
+
+
+    & .tarjeta {
+        font-size: 1.5rem;
+        padding: 0.5em;
+        display: flex;
+        gap: 20px;
+
+        &-icon {
+            background-color: rgba(13, 0, 254, 0.484);
+            min-width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & i {
+                font-size: 1.8rem;
+                color: white;
+
+            }
+
+        }
+
+    }
+}
+
+/* MEDIAQUERIE-TABLET */
+@media (min-width:768px)and (max-width:1200px) {
+
+
+    /* cards-tablet-INDEX */
+    section h3 {
+        font-size: 2rem;
+    }
+
+    .contenedor-tarjetas {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 5px;
+
+    }
+}
+
+
+/* MEDIAQUERIE-DESKTOP */
+@media (min-width:1201px) {
+
+
+
+    /* section-historia */
+    .historia-titulo{
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+    .contenedor-historia {
+        flex-direction: row;
+        gap: 10px;
+
+        & p {
+            text-align: center;
+        }
+
+        & .figure--order {
+            order: 1;
+        }
+    }
+
+    /* card-desktop-INDEX */
+    .contenedor-tarjetas {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 11px;
+
+        & .tarjeta-text {
+            font-size: 1.3rem;
+        }
+    }
+
+
+
+    section h3 {
+        font-size: 2rem;
+    }
+}

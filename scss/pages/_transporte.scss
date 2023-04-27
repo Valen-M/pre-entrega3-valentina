@@ -1,0 +1,67 @@
+/*Transportes*/
+.contenedor-transportes {
+    padding: 10px;
+
+    & h2 {
+        text-align: center;
+    }
+
+    & .img-flota {
+        max-width: 380px;
+        height: auto;
+
+    }
+
+    & .img-transportes {
+        max-width: 380px;
+        height: auto;
+
+    }
+}
+
+/*MEDIAQUERIE-TABLET*/
+@media (min-width:768px)and (max-width:1200px) {
+    .contenedor-transportes {
+        .figure-transportes {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .figure-flota {
+
+            display: flex;
+            justify-content: center;
+
+
+        }
+    }
+}
+
+/*MEDIAQUERIE-DESKTOP*/
+@media (min-width:1201px) {
+    .contenedor-cargas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        h3{grid-column: 1/ span 3;
+
+        }
+        .figure-transportes{
+            display: flex;
+            justify-content: center;
+        
+        }
+    }
+    .contenedor-flota{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        h3{grid-column: 1/ span 3;
+
+        }
+        .figure-flota{
+            order: 1;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
