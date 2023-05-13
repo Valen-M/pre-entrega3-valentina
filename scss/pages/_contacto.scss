@@ -4,7 +4,7 @@ $color-letras: white;
 $fs-titulo:2rem;
 $fs-normal:1.5rem;
 form {
-    width: 100vw;
+    width: 98vw;
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -29,11 +29,11 @@ form {
    }
    &:active
    {
-    background-color: $color-fondo;
+    background-color: $color-fondo !important;
     color: $color-letras;
-    border: 2px solid $color-fondo;
+    border: 2px solid $color-fondo !important ;
    }
-   
+  
     }
    
 }
