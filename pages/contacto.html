@@ -52,7 +52,7 @@
     </header>
     <main>
         <div class="contenedor-formulario" id="contenedor-formulario">
-            <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+            <form action="#" method="get" enctype="application/x-www-form-urlencoded" name="contacto" netlify>
                 <div class="item-form">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
@@ -69,10 +69,10 @@
                 </div>
                 <div class="item-form">
                     <textarea name="consulta" id="consulta" cols="30" rows="5"
-                        placeholder="Envianos tu consulta!"></textarea>
+                        placeholder="Envianos tu consulta!" ></textarea>
                 </div>
 
-                <button type="button" class="btn btn-outline-success">Enviar.</button>
+                <input type="submit" class="btn btn-outline-success">Enviar.</input>
             </form>
         </div>
     </main>
